@@ -95,6 +95,8 @@ a,button
 {
     background-color: inherit;
     color: inherit;
+    border-color: white;
+    box-shadow: none;
 }
 .l-bloc .a-btn,.l-bloc .navbar a,.l-bloc .navbar-brand,.l-bloc a .icon-lg,.l-bloc a .icon-md,.l-bloc a .icon-sm,.l-bloc h1 a,.l-bloc h2 a,.l-bloc h3 a,.l-bloc h4 a,.l-bloc h5 a,.l-bloc h6 a,.l-bloc p a
 {
@@ -545,6 +547,13 @@ h4
 {
     background-image:url("../img/image-de-presentation.webp");
 }
+
+.navbar-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @media (max-width:1024px)
 {
     .bloc
@@ -706,19 +715,32 @@ h4
     .dropdown
     {
         display: inline;
+        position: inherit;
     }
     .dropdown-menu
     {
-        position: inherit;
+        position: inherit;       
     }    
     .dropdown-menu.show 
     {
         border: 1px solid rgba(0,0,0,.15);
         box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 20%);
+        top: 57px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        width: 100%;
     }
+    button 
+    {
+        background-image:url("../img/incon-bar.svg");
+        filter: opacity(0.5);
+    } 
     .btn-secondary
     {
         background-color: inherit;
+        border-color: white;
+        height: 1.1rem;
     }
     .navbar .nav
     {
