@@ -4,8 +4,6 @@ body
     padding:0;
     background:#fff;
     overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
 }
 a,button
 {
@@ -20,9 +18,6 @@ a,button
     clear:both;
     background:50% 50% no-repeat;
     padding:0 50px;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
     position:relative;
 }
@@ -51,9 +46,6 @@ a,button
 }
 .bg-b-edge,.bg-br-edge,.bg-center,.bg-l-edge,.bg-r-edge,.bg-repeat,.bg-t-edge
 {
-    -webkit-background-size:auto!important;
-    -moz-background-size:auto!important;
-    -o-background-size:auto!important;
     background-size:auto!important;
 }
 .bg-repeat
@@ -218,7 +210,6 @@ a,button
         top:50%;
         right:20px;
         transform:translate(0,-50%);
-        -webkit-transform:translateY(-50%);
     }
     .nav-center
     {
@@ -283,7 +274,6 @@ button, input, optgroup, select, textarea
 }
 button, html input[type=button], input[type=reset], input[type=submit] 
 {
-    -webkit-appearance: button;
     cursor: pointer;
 }
 button, select 
@@ -339,12 +329,10 @@ a[data-lightbox]:hover::before
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    -webkit-transform:translateY(-50%);
 }
 a[data-lightbox]:hover img
 {
     opacity:.6;
-    -webkit-animation-fill-mode:none;
     animation-fill-mode:none;
 }
 .showScrollTop
@@ -581,7 +569,7 @@ h4
         background-attachment:scroll;
     }
 }
-@media only screen and (width:1024px) and (width:1366px) and (-webkit-min-device-pixel-ratio:1.5)
+@media only screen and (width:1024px) and (width:1366px)
 {
     .b-parallax
     {
@@ -636,8 +624,6 @@ h4
     {
         position:inherit;
         transform:none;
-        -webkit-transform:none;
-        -ms-transform:none;
     }
     .nav>li
     {
@@ -673,7 +659,6 @@ h4
     {
         padding:0;
         overflow-x:hidden;
-        -webkit-box-shadow:none;
         box-shadow:none;
     }
     .navbar-brand img
